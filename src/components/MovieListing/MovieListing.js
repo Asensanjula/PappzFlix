@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { getAllMovies } from "../../features/Movies/MovieSlice";
 import { MovieCard } from "../MovieCard/MovieCard";
+import './MovieListing.scss'
 
 export const MovieListing = () => {
   const movies = useSelector(getAllMovies);
