@@ -6,8 +6,8 @@ import './MovieListing.scss'
 
 export const MovieListing = () => {
   const movies = useSelector(getAllMovies);
-  console.log("list ",movies);
-  console.log("val ",movies.Response === "True");
+  // console.log("list ",movies);
+  // console.log("val ",movies.Response === "True");
 
   let renderMovies =
     movies.Response === "True" ? 
@@ -20,7 +20,7 @@ export const MovieListing = () => {
       </div>
     );
     
-    console.log(renderMovies);
+    // console.log(renderMovies);
   return (
     <div className="movie-wrapper">
       <div className="movie-list">
